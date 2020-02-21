@@ -17,6 +17,7 @@ kill -9 $prcoessid
 nohup npm start & 
 fi
 
+sleep 5
 #validation of service andslack notification 
 
 if curl -s --head --request GET http://localhost:7777 | grep "200 OK" > /dev/null; then
